@@ -1,0 +1,25 @@
+CREATE DATABASE Filmes_tarde;
+
+DROP DATABASE Filmes_tarde;
+
+USE Filmes_tarde;
+
+CREATE TABLE Generos(
+	IdGenero	INT PRIMARY KEY IDENTITY
+	,Nome		VARCHAR (255) NOT NULL UNIQUE
+);
+
+CREATE TABLE Filmes(
+	IdFilme		INT PRIMARY KEY IDENTITY
+	,Titulo		VARCHAR (255) NOT NULL UNIQUE
+	,IdGenero	INT FOREIGN KEY REFERENCES Generos (IdGenero)
+);
+
+-- Cria a tabela Usuarios
+CREATE TABLE Usuarios(
+	IdUsuario	INT PRIMARY KEY IDENTITY
+	,Email		VARCHAR (255) NOT NULL UNIQUE
+	,Senha		VARCHAR (255) NOT NULL
+	,Permissao	VARCHAR (255) NOT NULL
+);
+GO

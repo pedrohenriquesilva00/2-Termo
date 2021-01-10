@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="P:Senai.Senatur.WebApi.Controllers.LoginController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.Post(Senai.Senatur.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Get">
+            <summary>
+            Listar todos os  Pacotes
+            </summary>
+            <returns>Uma lista de Pacotes </returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetById(System.Int32)">
+            <summary>
+            Busca um Pacote através do ID
+            </summary>
+            <param name="id">ID do Pacote que será buscado</param>
+            <returns>Um tipo de usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetOrderBy(System.String)">
+            <summary>
+            Listar todos os funcionarios de maneira ordenada pelo nome
+            </summary>
+            <param name="ordem">string que define a ordenação(crescente ou decrescente</param>
+            <returns>Retona uma lista ordenada de funcionarios</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.PacotesAtivos(System.Boolean)">
+            <summary>
+            Lista os pacotes ativos e inativos
+            </summary>
+            <param name="pacotesAtivos">objeto pacotesAtivos que será buscado</param>
+            <returns>retorna os pacotes ativos ou inativos</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Post(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Cadastra um novo Pacote
+            </summary>
+            <param name="novoPacote">Objeto com as informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Delete(System.Int32)">
+            <summary>
+            Deleta um Pacote
+            </summary>
+            <param name="id">ID do pacote que será deletado</param>
+            <returns>status code</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Put(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um Pacote pelo ID
+            </summary>
+            <param name="id"></param>
+            <param name="pacoteAtualizado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Um tipo de usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Post(Senai.Senatur.WebApi.Domains.TiposUsuario)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novotipoUsuario">Objeto com as informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Post(Senai.Senatur.WebApi.Domains.Usuarios)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto com as informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+            <returns>Um um status code 200 - Ok - No Content</returns>
+        </member>
+    </members>
+</doc>
